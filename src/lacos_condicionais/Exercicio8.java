@@ -27,14 +27,14 @@ public class Exercicio8 {
 				System.out.println("Saldo Insuficiente!");
 			} else {
 				saldo = (saldo - saque);
-				System.out.println("Seu novo saldo é de R$"+saldo);
+				System.out.printf("Seu novo saldo é de R$%.2f",saldo);
 			}
 			break;
 		case 3:
 			System.out.print("Informe o valor do depósito: ");
 			float deposito = read.nextFloat();
 			saldo = (deposito + saldo);
-			System.out.println("Seu novo saldo é de R$"+saldo);
+			System.out.printf("Seu novo saldo é de R$%.2f",saldo);
 			break;
 			
 		default:System.out.println("Operação Inválida!");
